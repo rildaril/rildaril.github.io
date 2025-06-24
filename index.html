@@ -1,150 +1,145 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <!--Import Google Icon Font-->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <!--Import materialize.css-->
-    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
-
-    <!-- my CSS -->
-    <link rel="stylesheet" href="css/style.css">
-    
-    <!--Let browser know website is optimized for mobile-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-
-    <title>Web Programming UNPAS</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio - Daryll</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: 'Inter', sans-serif;
+        scroll-behavior: smooth;
+      }
+    </style>
   </head>
-
-  <body>
-
-    <!-- navbar -->
-    <div class="navbar-fixed">
-      <nav class="blue darken-2">
-        <div class="container">
-          <div class="nav-wrapper">
-            <a href="#!" class="brand-logo">WPU</a>
-            <a href="#" data-target="mobile-nav" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-            <ul class="right hide-on-med-and-down">
-              <li><a href="">About Us</a></li>
-              <li><a href="">Clients</a></li>
-              <li><a href="">Services</a></li>
-              <li><a href="">Portfolio</a></li>
-              <li><a href="">Contact Us</a></li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-    </div>
-
-    <!-- sidenav -->
-    <ul class="sidenav" id="mobile-nav">
-      <li><a href="">About Us</a></li>
-      <li><a href="">Clients</a></li>
-      <li><a href="">Services</a></li>
-      <li><a href="">Portfolio</a></li>
-      <li><a href="">Contact Us</a></li>
-    </ul>
-
-    <!-- slider -->
-    <div class="slider">
-      <ul class="slides">
-        <li>
-          <img src="img/slider/1.png">
-          <div class="caption left-align">
-            <h3>This is our big Tagline!</h3>
-            <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
-          </div>
-        </li>
-        <li>
-          <img src="img/slider/2.png">
-          <div class="caption right-align">
-            <h3>This is our big Tagline!</h3>
-            <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
-          </div>
-        </li>
-        <li>
-          <img src="img/slider/3.png">
-          <div class="caption center-align">
-            <h3>This is our big Tagline!</h3>
-            <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
-          </div>
-        </li>
+  <body class="bg-white text-gray-800">
+    <!-- Navbar -->
+    <nav class="flex justify-between items-center p-6 shadow-md fixed w-full bg-white z-50">
+      <div class="text-2xl font-bold text-indigo-600">Daryll</div>
+      <ul class="hidden md:flex space-x-6 text-sm font-semibold">
+        <li><a href="#projects" class="hover:text-indigo-600">Projects</a></li>
+        <li><a href="#about" class="hover:text-indigo-600">About Me</a></li>
+        <li><a href="#contact" class="hover:text-indigo-600">Contact</a></li>
       </ul>
-    </div>
+      <a href="#contact" class="bg-indigo-600 text-white px-4 py-2 rounded-md text-sm hover:bg-indigo-700 transition">Hire Me</a>
+    </nav>
 
-    <!-- About Us -->
-    <section id="about" class="about">
-      <div class="container">
-        <div class="row">
-          <h3 class="center light grey-text text-darken-3">About Us</h3>
-          <div class="col m6 light">
-            <h5>We Are Professionals</h5>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi quo accusantium repellat similique ipsa doloribus in aliquam earum eaque, possimus necessitatibus sunt repellendus ullam recusandae voluptas dolore debitis saepe facere.</p>
+    <!-- Hero Section -->
+    <section class="relative min-h-screen flex flex-col-reverse md:flex-row justify-center items-center pt-32 px-6 gap-8 overflow-hidden bg-gradient-to-br from-indigo-50 via-white to-white">
+      <!-- Decorative Shapes -->
+      <div class="absolute top-10 right-0 w-36 h-36 bg-indigo-200 rounded-full blur-2xl opacity-70 z-0"></div>
+      <div class="absolute top-1/2 left-10 w-16 h-16 bg-indigo-300 rounded-full blur-md opacity-40 z-0 animate-pulse"></div>
+
+      <div class="max-w-xl text-center md:text-left z-10" data-aos="fade-right">
+        <h1 class="text-4xl md:text-5xl font-extrabold leading-tight mb-4">
+          Hi, I am Daryll
+        </h1>
+        <p class="text-lg text-gray-600 mb-6">
+          A Full-Stack Developer & Design Enthusiast passionate about building modern, fast and beautiful websites.
+        </p>
+        <a
+          href="#"
+          class="inline-flex items-center bg-indigo-100 text-indigo-700 font-medium px-4 py-2 rounded shadow hover:bg-indigo-200 transition"
+        >
+          <svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20">
+            <path d="M13 7H7v6h6V7zM2 5a2 2 0 012-2h12a2 2 0 012 2v10a2 2 01-2 2H4a2 2 01-2-2V5z"/>
+          </svg>
+          Download CV
+        </a>
+      </div>
+
+      <div class="z-10" data-aos="fade-left">
+        <img src="img/illustration/Programming-pana.png" alt="Developer" class="w-full max-w-[750px]" />
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="py-24 px-6 bg-gray-50">
+      <div class="max-w-6xl mx-auto text-center">
+        <h2 class="text-3xl font-bold mb-4" data-aos="fade-up">Projects Portfolio</h2>
+        <p class="text-gray-600 mb-8" data-aos="fade-up" data-aos-delay="100">Some of my work from various categories</p>
+
+        <div class="grid md:grid-cols-3 gap-6">
+          <div class="bg-white shadow rounded-lg overflow-hidden hover:scale-105 transform transition" data-aos="zoom-in">
+            <img src="img/projects/mini xbanner-square.png" alt="Project 1" class="w-full" />
+            <div class="p-4 text-left">
+              <h3 class="font-semibold text-lg">Website e-commerce</h3>
+              <p class="text-sm text-gray-500">Web Application</p>
+            </div>
           </div>
-          <div class="col m6 light">
-            <p>WEB DEVELOPMENT</p>
-            <div class="progress">
-                <div class="determinate blue" style="width: 95%"></div>
+
+          <div class="bg-white shadow rounded-lg overflow-hidden hover:scale-105 transform transition" data-aos="zoom-in" data-aos-delay="100">
+            <img src="img/projects/dashboard-royalti.png" alt="Project 2" class="w-full" />
+            <div class="p-4 text-left">
+              <h3 class="font-semibold text-lg">Book Royalti Dashboard</h3>
+              <p class="text-sm text-gray-500">Web Application</p>
             </div>
-            <p>MOBILE APP DEVELOPMENT</p>
-            <div class="progress">
-                <div class="determinate blue" style="width: 85%"></div>
-            </div>
-            <p>GAME DEVELOPMENT</p>
-            <div class="progress">
-                <div class="determinate blue" style="width: 90%"></div>
+          </div>
+
+          <div class="bg-white shadow rounded-lg overflow-hidden hover:scale-105 transform transition" data-aos="zoom-in" data-aos-delay="200">
+            <img src="img/projects/suaco.png" alt="Project 3" class="w-full" />
+            <div class="p-4 text-left">
+              <h3 class="font-semibold text-lg">Coffee Shop Dashboard</h3>
+              <p class="text-sm text-gray-500">Web Application</p>
             </div>
           </div>
         </div>
       </div>
     </section>
-    
 
-    <!-- Clients -->
-    <div class="parallax-container">
-      <div class="parallax"><img src="img/slider/4.png"></div>
-
-      <div class="container clients">
-        <h3 class="center light white-text">Our Clients</h3>
-        <div class="row">
-          <div class="col m4 s12 center">
-            <img src="img/clients/gojek.png">
-          </div>
-          <div class="col m4 s12 center">
-            <img src="img/clients/tokopedia.png">
-          </div>
-          <div class="col m4 s12 center">
-            <img src="img/clients/traveloka.png">
-          </div>
+    <!-- About Me -->
+    <section id="about" class="py-24 px-6 bg-white relative overflow-hidden">
+      <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-10" data-aos="fade-up">
+        <div class="md:w-1/2">
+          <img src="img/illustration/Aboutme-cuate.png" alt="About Me" class="w-full max-w-md mx-auto">
+        </div>
+        <div class="md:w-1/2 text-center md:text-left">
+          <h2 class="text-3xl font-bold mb-4">About Me</h2>
+          <p class="text-gray-600 leading-relaxed">
+            I'm a passionate developer who loves turning ideas into elegant digital experiences. From crafting stunning interfaces to developing fast APIs, I specialize in building websites that work and wow.
+          </p>
+          <ul class="mt-6 text-gray-700 space-y-2">
+            <li><span class="text-indigo-600 font-semibold">✓</span>  Full-Stack Development</li>
+            <li><span class="text-indigo-600 font-semibold">✓</span>  Responsive UI/UX Design</li>
+            <li><span class="text-indigo-600 font-semibold">✓</span>  Problem Solver & Lifelong Learner</li>
+          </ul>
         </div>
       </div>
-    </div>
+    </section>
 
+    <!-- Contact -->
+    <section id="contact" class="py-24 px-6 bg-indigo-50 relative">
+      <div class="max-w-4xl mx-auto text-center" data-aos="fade-up">
+        <h2 class="text-3xl font-bold mb-4">Let's Work Together</h2>
+        <p class="text-gray-600 mb-6">I'm currently open for freelance or full-time opportunities. Feel free to drop me a message if you're interested in working together!</p>
+        <a href="mailto:hafidzdaryll@gmail.com" class="inline-block bg-indigo-600 text-white px-6 py-3 rounded-md text-lg font-semibold shadow hover:bg-indigo-700 transition">Say Hello</a>
 
-    <!--JavaScript at end of body for optimized loading-->
-    <script type="text/javascript" src="js/materialize.min.js"></script>
+        <div class="mt-10 flex justify-center gap-4 text-gray-600">
+          <a href="#" class="hover:text-indigo-600">LinkedIn</a>
+          <a href="#" class="hover:text-indigo-600">GitHub</a>
+          <a href="#" class="hover:text-indigo-600">Twitter</a>
+        </div>
+      </div>
+    </section>
+
+    <footer class="text-center text-sm py-6 text-gray-400">
+      &copy; 2025 Daryll Irsyad. All rights reserved.
+      <a href="https://storyset.com/web" class="ml-2 text-indigo-500 hover:underline">Web illustrations by Storyset</a>
+    </footer>
+
     <script>
-      const sideNav = document.querySelectorAll('.sidenav');
-      M.Sidenav.init(sideNav);
-
-      const slider = document.querySelectorAll('.slider');
-      M.Slider.init(slider, {
-        indicators: false,
-        height: 500,
-        transition: 600,
-        interval: 3000
+      AOS.init({
+        duration: 800,
+        easing: 'ease-in-out',
+        once: true
       });
-
-      const parallax = document.querySelectorAll('.parallax');
-      M.Parallax.init(parallax);
-
     </script>
   </body>
 </html>
-
-
-
-
-
-
-
